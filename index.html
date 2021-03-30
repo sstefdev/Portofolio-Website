@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
@@ -35,7 +35,7 @@
               <a href="#contact" class="nav__link">Contact</a>
             </li>
             <li class="nav__item">
-              <button href="#" class="nav__btn">Download CV</button>
+              <a href="./pdf/Stefan_Stefanovic(CV).pdf" download class="nav__btn">Download CV</a>
             </li>
           </ul>
         </div>
@@ -106,10 +106,12 @@
             <span class="skills__name">REACT/REDUX/GATSBY</span>
             <span class="skills__name">NPM</span>
             <span class="skills__name">WebPack</span>
-            <span class="skills__name">Version Control (GIT)</span>
+            <span class="skills__name">Version Control(GIT)</span>
             <span class="skills__name">NODE.js</span>
+            <span class="skills__name">EXPRESS</span>
             <span class="skills__name">JWT/Auth</span>
-            <span class="skills__name">WebSocket</span>
+            <span class="skills__name">WebSocket/RestAPI</span>
+            <span class="skills__name">Python</span>
           </div>
 
           <div class="skills__img">
@@ -123,13 +125,13 @@
 
         <div class="portfolio__container bd-grid">
           <div class="portfolio__img">
-            <img src="assets/img/work1.png" alt="" />
+            <img style="height: 13rem" src="assets/img/inprogress.jpg" alt="" />
             <div class="portfolio__link">
               <a
                 target="_blank"
                 href="https://air-pengui.netlify.app/"
                 class="portfolio__link-name"
-                >Pengui Air</a
+                >Live Chat App</a
               >
             </div>
           </div>
@@ -140,12 +142,36 @@
                 target="_blank"
                 href="https://retro-weather.netlify.app/"
                 class="portfolio__link-name"
-                >Weather App</a
+                >Focus Trader</a
               >
             </div>
           </div>
           <div class="portfolio__img">
-            <img style="height: 13rem" src="assets/img/work3.png" alt="" />
+            <img src="assets/img/work1.png" alt="" />
+
+            <div class="portfolio__link">
+              <a
+              target="_blank"
+              href="https://air-pengui.netlify.app/"
+              class="portfolio__link-name"
+              >Pengui Air</a
+            >
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img style="height: 13rem" src="assets/img/work4.jpg" alt="" />
+
+            <div class="portfolio__link">
+              <a
+              target="_blank"
+              href="https://retro-weather.netlify.app/"
+              class="portfolio__link-name"
+              >Weather App</a
+            >
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img style="height: 13rem" src="assets/img/work5.jpg" alt="" />
 
             <div class="portfolio__link">
               <a
@@ -158,32 +184,18 @@
           </div>
           <div class="portfolio__img">
             <img
-              style="width: 10rem; top: 2.5rem; position: relative"
-              src="assets/img/work4.png"
-              alt=""
-            />
+            style="height: 13rem"
+            src="assets/img/work6.jpg"
+            alt=""
+          />
 
             <div class="portfolio__link">
               <a
-                target="_blank"
-                href="https://flappy-bird-v1.netlify.app/"
-                class="portfolio__link-name"
-                >Flappy Brid Clone</a
-              >
-            </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/work5.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
-            </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/work6.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
+              target="_blank"
+              href="https://flappy-bird-v1.netlify.app/"
+              class="portfolio__link-name"
+              >Flappy Brid Clone</a
+            >
             </div>
           </div>
         </div>
@@ -201,22 +213,23 @@
             <span class="contact__text">+381 60 344 0402</span>
           </div>
 
-          <form action="" class="contact__form">
-            <div class="contact__inputs">
-              <input type="text" placeholder="Name" class="contact__input" />
-              <input type="mail" placeholder="Email" class="contact__input" />
-            </div>
-
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
-              class="contact__input"
-            ></textarea>
-
-            <input type="submit" value="Submit" class="contact__button" />
-          </form>
+          <form action="mailto:sstefandev@gmail.com" method="POST"
+          enctype="multipart/form-data" name="EmailForm" class="contact__form">
+          <input
+            placeholder="Name"
+            class="contact__input"
+            type="text"
+            size="19"
+            name="ContactName"
+          />
+          <textarea
+            placeholder="Message"
+            class="contact__input"
+            name="ContactComment"
+            rows="6"
+            cols="20"
+          ></textarea>
+          <input type="submit" value="Send" class="contact__button" />
         </div>
       </section>
     </main>

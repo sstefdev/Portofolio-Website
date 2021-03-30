@@ -155,6 +155,30 @@ img {
   cursor: pointer;
 }
 
+.nav__link:hover,
+.nav__item:hover {
+  color: var(--dark-color);
+}
+
+.nav__btn {
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  background-color: transparent;
+  color: white;
+  font-family: var(--body-font);
+  border: 1px solid white;
+  transition: all 0.2s ease-in;
+}
+
+.nav__btn:hover,
+.nav__btn:active {
+  border-color: var(--dark-color);
+  background-color: var(--dark-color);
+  cursor: pointer;
+  outline: transparent;
+}
+
 .show {
   right: 0;
 }
@@ -262,7 +286,7 @@ img {
 }
 .portfolio__container {
   justify-items: center;
-  row-gap: 2rem;
+  row-gap: 4rem;
 }
 .portfolio__img {
   position: relative;
@@ -367,7 +391,7 @@ img {
   }
 
   .home__scroll {
-    padding-bottom: 20rem;
+    padding-bottom: 30rem;
   }
 
   .home__img {
