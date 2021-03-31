@@ -171,6 +171,20 @@ img {
   transition: all 0.2s ease-in;
 }
 
+@media screen and (max-width: 768px) {
+  .nav__btn {
+    border: 1px solid var(--dark-color);
+    color: white;
+    background-color: transparent;
+    filter: drop-shadow(3px 1px 4px black);
+  }
+
+  .nav__btn:hover,
+  .nav__btn:active {
+    background-color: white;
+  }
+}
+
 .nav__btn:hover,
 .nav__btn:active {
   border-color: var(--dark-color);
