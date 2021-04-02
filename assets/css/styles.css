@@ -214,8 +214,8 @@ img {
 }
 
 .arrow {
-  width: 5rem;
-  margin-bottom: -3rem;
+  width: 2rem;
+  margin-bottom: -1.1rem;
 }
 
 .arrow:focus,
@@ -241,7 +241,8 @@ img {
 }
 
 .home__scroll-first-link {
-  padding-left: 1.8rem;
+  padding-left: 0.35rem;
+  padding-bottom: 1rem;
   writing-mode: vertical-lr;
   color: var(--white-color);
 }
