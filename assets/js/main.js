@@ -69,19 +69,3 @@ sr.reveal(".contact__subtitle", {});
 sr.reveal(".contact__text", { interval: 200 });
 sr.reveal(".contact__input", { delay: 400 });
 sr.reveal(".contact__button", { delay: 600 });
-
-const deg = (a) => (Math.PI / 180) * a;
-const rand = (v1, v2) => Math.floor(v1 + Math.random() * (v2 - v1));
-const opt = {
-  particles: window.width / 500 ? 1000 : 500,
-  noiseScale: 0.009,
-  angle: (Math.PI / 180) * -90,
-  h1: rand(0, 360),
-  h2: rand(0, 360),
-  s1: rand(20, 90),
-  s2: rand(20, 90),
-  l1: rand(30, 80),
-  l2: rand(30, 80),
-  strokeWeight: 1.2,
-  tail: 82,
-};

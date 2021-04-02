@@ -35,7 +35,12 @@
               <a href="#contact" class="nav__link">Contact</a>
             </li>
             <li class="nav__item">
-              <a href="./pdf/Stefan_Stefanovic(CV).pdf" download class="nav__btn">Download CV</a>
+              <a
+                href="./pdf/Stefan_Stefanovic(CV).pdf"
+                download
+                class="nav__btn"
+                >Download CV</a
+              >
             </li>
           </ul>
         </div>
@@ -50,9 +55,27 @@
       <section class="home" id="home">
         <div class="home__container bd-grid">
           <div class="home__scroll">
-            <a href="#about" class="home__scroll-link"
-              ><i class="bx bx-up-arrow-alt"></i>Scroll down</a
-            >
+            <div class="home__scroll-flex">
+              <a href="#about" class="home__scroll-first-link">Scroll down</a>
+              <a href="#about" class="home__scroll-link"
+                ><img
+                  class="arrow"
+                  src="./assets/img/arrow.gif"
+                  alt="Scroll down.."
+              /></a>
+              <a href="#about" class="home__scroll-link"
+                ><img
+                  class="arrow"
+                  src="./assets/img/arrow.gif"
+                  alt="Scroll down.."
+              /></a>
+              <a href="#about" class="home__scroll-link"
+                ><img
+                  class="arrow"
+                  src="./assets/img/arrow.gif"
+                  alt="Scroll down.."
+              /></a>
+            </div>
           </div>
           <img src="assets/img/profile.png" alt="" class="home__img" />
         </div>
@@ -66,7 +89,7 @@
           </div>
           <div>
             <h2 class="about__subtitle">I am Stefan Stefanovic</h2>
-            <span class="about__profession">Javascript Developer</span>
+            <span class="about__profession">Web Developer</span>
             <p class="about__text">
               Hello there! Before talking about qualifications and professional
               abilities, I would like to introduce myself. Taking web
@@ -101,16 +124,16 @@
           <div class="skills__box">
             <h3 class="skills__subtitle">Development</h3>
             <span class="skills__name">HTML5</span>
-            <span class="skills__name">CSS3/SCSS/BOOTSTRAP</span>
+            <span class="skills__name">CSS3/SCSS/Bootstrap</span>
             <span class="skills__name">JavaScript</span>
-            <span class="skills__name">REACT/REDUX/GATSBY</span>
+            <span class="skills__name">React/Redux/Gatsby</span>
             <span class="skills__name">NPM</span>
             <span class="skills__name">WebPack</span>
             <span class="skills__name">Version Control(GIT)</span>
-            <span class="skills__name">NODE.js</span>
-            <span class="skills__name">EXPRESS</span>
+            <span class="skills__name">Node.js/Express</span>
             <span class="skills__name">JWT/Auth</span>
             <span class="skills__name">WebSocket/RestAPI</span>
+            <span class="skills__name">MongoDB/MySQL</span>
             <span class="skills__name">Python</span>
           </div>
 
@@ -127,10 +150,7 @@
           <div class="portfolio__img">
             <img style="height: 13rem" src="assets/img/inprogress.jpg" alt="" />
             <div class="portfolio__link">
-              <a
-                target="_blank"
-                href=""
-                class="portfolio__link-name"
+              <a target="_blank" href="" class="portfolio__link-name"
                 >Live Chat App</a
               >
             </div>
@@ -151,11 +171,11 @@
 
             <div class="portfolio__link">
               <a
-              target="_blank"
-              href="https://air-pengui.netlify.app/"
-              class="portfolio__link-name"
-              >Pengui Air</a
-            >
+                target="_blank"
+                href="https://air-pengui.netlify.app/"
+                class="portfolio__link-name"
+                >Pengui Air</a
+              >
             </div>
           </div>
           <div class="portfolio__img">
@@ -163,11 +183,11 @@
 
             <div class="portfolio__link">
               <a
-              target="_blank"
-              href="https://retro-weather.netlify.app/"
-              class="portfolio__link-name"
-              >Weather App</a
-            >
+                target="_blank"
+                href="https://retro-weather.netlify.app/"
+                class="portfolio__link-name"
+                >Weather App</a
+              >
             </div>
           </div>
           <div class="portfolio__img">
@@ -183,19 +203,15 @@
             </div>
           </div>
           <div class="portfolio__img">
-            <img
-            style="height: 13rem"
-            src="assets/img/work6.jpg"
-            alt=""
-          />
+            <img style="height: 13rem" src="assets/img/work6.jpg" alt="" />
 
             <div class="portfolio__link">
               <a
-              target="_blank"
-              href="https://flappy-bird-v1.netlify.app/"
-              class="portfolio__link-name"
-              >Flappy Brid Clone</a
-            >
+                target="_blank"
+                href="https://flappy-bird-v1.netlify.app/"
+                class="portfolio__link-name"
+                >Flappy Brid Clone</a
+              >
             </div>
           </div>
         </div>
@@ -213,23 +229,29 @@
             <span class="contact__text">+381 60 344 0402</span>
           </div>
 
-          <form action="mailto:sstefandev@gmail.com" method="POST"
-          enctype="multipart/form-data" name="EmailForm" class="contact__form">
-          <input
-            placeholder="Name"
-            class="contact__input"
-            type="text"
-            size="19"
-            name="ContactName"
-          />
-          <textarea
-            placeholder="Message"
-            class="contact__input"
-            name="ContactComment"
-            rows="6"
-            cols="20"
-          ></textarea>
-          <input type="submit" value="Send" class="contact__button" />
+          <form
+            action="mailto:sstefandev@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm"
+            class="contact__form"
+          >
+            <input
+              placeholder="Name"
+              class="contact__input"
+              type="text"
+              size="19"
+              name="ContactName"
+            />
+            <textarea
+              placeholder="Message"
+              class="contact__input"
+              name="ContactComment"
+              rows="6"
+              cols="20"
+            ></textarea>
+            <input type="submit" value="Send" class="contact__button" />
+          </form>
         </div>
       </section>
     </main>
