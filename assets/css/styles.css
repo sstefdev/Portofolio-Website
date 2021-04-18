@@ -427,6 +427,18 @@ img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .home {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home__img {
+    padding-left: 25rem;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .home {
     height: 55vh;
@@ -437,20 +449,7 @@ img {
   }
 
   .home__img {
-    padding-left: 15rem;
-    width: 20rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .home__img {
-    padding-left: 5rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .home {
-    height: 40vh;
+    padding-left: 12rem;
   }
 }
 
