@@ -254,6 +254,7 @@ img {
   right: 0;
   bottom: 0;
   width: 65rem;
+  animation: opacityDelay;
 }
 
 .about__container {
@@ -566,5 +567,23 @@ img {
   .home__img {
     width: 510px;
     right: 24%;
+  }
+}
+
+@keyframes opacityDelay {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
